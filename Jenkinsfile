@@ -15,7 +15,7 @@ pipeline {
     stage('Test') {
       when {
           expression {
-            flag == true
+            flag == false
           }
       }
       steps {

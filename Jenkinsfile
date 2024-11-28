@@ -14,6 +14,11 @@ pipeline {
     }
     stage('Test') {
       steps {
+         when {
+          expression {
+            flag == true
+          }
+        }
         echo 'Testing..'
         // Here you can define commands for your tests
         }
